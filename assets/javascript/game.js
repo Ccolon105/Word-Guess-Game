@@ -103,7 +103,6 @@ function evaluateGuess(letter) {
 
     if (positions.length <= 0) {
         remainingGuesses--;
-        updateHangmanImage();
     } else {
         for(var i = 0; i < positions.length; i++) {
             guessingWord[positions[i]] = letter;
