@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Word Guess Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <script src="assets/javascript/game.js"></script>    
+    <div class="header">
+     <h1>Word Guess Game:</h1>
+        <p>Western Edition</p>
+    </div>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 gameplay">
+                <div id="youwin">Way to go Cowboy, You Won!</div>
+                <div id="gameover">Game Over Buckaroo.</div>
+                <h2 id="pressKeyTryAgain">Press Any key to Restart</h2>
+                
+            </div>
+            <div class="col-md-6 gameplay">
+                <h2>Press Any Key to Start!</h2>
+                <h4>Wins</h4>
+                <h5 id="totalWins"></h5>
+                <h4>Current Word</h4>
+                <h3 id="currentWord"></h3>
+                <h4>Guesses Remaining</h4>
+                <h6 id="remainingGuesses"></h6>
+                <h4>Letters Guessed</h4>
+                <h3 id="guessedLetters"></h3>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        resetGame();
+        updateDisplay();
+    </script>
+       
+</body>
+</html>
